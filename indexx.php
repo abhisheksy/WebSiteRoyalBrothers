@@ -26,7 +26,7 @@ if($_POST){
 	}
 	
 	if(isset($_POST[Bid])){
-		$sql = "UPDATE Bikes SET BikeNos=BikeNos-$_POST[BikeNos] where BikeID=$_POST[Bid]";
+		$sql = "UPDATE Bikes SET BikeNos=BikeNos+$_POST[BikeNos] where BikeID=$_POST[Bid]";
 		if ($conn->query($sql) === TRUE) {
 			echo "New record created successfully";
 		} else {
