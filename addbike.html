@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<title>The Royal Brothers</title>
+		
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		
+		<div  id="refno" style="top:-50px">
+			<p>Refer Friends  9900336655 / 9955664422</p>
+		</div>
+		
+		<div id="navbar">
+			<img src="img/royalbrothers_logo.png">
+			<span class="RBLogoText">
+				Royal<br>Brothers
+			</span>
+			<a href="#">Contact us</a>
+			<a href="addbike.html">Add Bikes</a>
+			<a href="bikes.html">Bikes</a>
+			<a href="index.html" style="align-right">Home</a>
+		</div>
+		
+		<br/>
+		<br/>
+		
+		<div id="adds" style="width:100%; position:relative; margin-left:10%; margin-right:10%;">
+			<h2>Add Bike To DATABASE</h2>
+			<form action="indexx.php" method="POST" enctype="multipart/form-data">
+				<h4><pre>Enter Unique ID:  </h4></pre><input type="text" name="BikeID"><br/>
+				<h4><pre>Bike Model:       </h4></pre><input type="text" name="BikeModel"><br/>
+				<h4><pre>Number of Bikes:  </h4></pre><input type="text" name="BikeNos"><br/>
+				<h4><pre>Select Image:     </h4></pre><input type="file" name="image" />
+				<h4><pre></h4></pre><input type="submit" />
+			</form>
+		</div>
+		
+		<br/>
+		<br/>
+		
+		<div id="adds" style="width:100%; position:relative; margin-left:10%; margin-right:10%;">
+			<h2>Remove Bike</h2>
+			<form action="indexx.php" method="POST" enctype="multipart/form-data">
+				<h4><pre>Enter Unique ID:  </h4></pre><input type="text" name="Bid"><br/>
+				<h4><pre>Number of Bikes:  </h4></pre><input type="text" name="BikeNos">
+				<h4><pre>          </h4></pre><input type="submit" />
+			</form>
+		</div>
+		
+		<br/>
+		<br/>
+		
+		<div id="pagebase" style="position:relative; padding-left:10%; padding-right:10%; background-color:#363636; bottom:0px; width:100%;">
+			<div class="row">
+				<div class="colD" style="width:35%">
+					<div class="row">
+						<div style="float:left; padding:10px;"><img src="img/royalbrothers_logo.png" style="padding:10px;"></image></div>
+						<div style="width:50%; float:left;">
+							<h3 style="font-weight:bold; font-size:300%; padding:5px; color:white;"><span style="color:#fecc00;">Royal</span> Brothers</h3>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colD" style="width">
+					<ul>
+						<li><h5 style="color:white; font-weight:bold;">COMPANY</h5></li>
+						<li><a href=#>FAQ's</a></li>
+						<li><a href=#>Privacy Policy</a></li>	
+						<li><a href=#>Terms and Conditions</a></li>
+					<ul>
+				</div>
+				
+				<div class="colD">
+					<ul>
+						<br/>
+						<li><a href=#>Tariff</a></li>
+						<li><a href=#>Partner with us</a></li>	
+						<li><a href=#>Reach Us</a></li>
+						<li><a href=#>About Us</a></li>
+						<li><a href=#>Site Map</a></li>
+					<ul>
+				</div>
+				
+				<div class="colD">
+					<ul>
+						<li><h5 style="color:white; font-weight:bold;">Follow</h5></li>
+						<li><a href=#>Facebook</a></li>
+						<li><a href=#>Twitter</a></li>	
+						<li><a href=#>Instagram</a></li>
+						<li><a href=#>Linkedin</a></li>
+					<ul>
+				</div>
+			</div>
+			
+			<div>
+				<p style="text-align:center; color:grey; margin-bottom:0;">©Copyright 2017 Royalbison AutoRentals India Private Ltd.All rights reserved.</p>
+			</div>
+		</div>
+		
+	<script>
+	//---------------navbar sticky-------------------
+	window.onscroll = function() {myFunction()};
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	
+	</body>
+
+</html>
